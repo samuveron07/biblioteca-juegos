@@ -10,7 +10,7 @@ const games = [
 const gameList = document.getElementById("gameList");
 const searchInput = document.getElementById("searchInput");
 
-// Función para mostrar los juegos en la página
+// Mostrar juegos en la página
 function displayGames(filteredGames) {
     gameList.innerHTML = "";
     filteredGames.forEach(game => {
@@ -25,7 +25,7 @@ function displayGames(filteredGames) {
     });
 }
 
-// Mostrar todos los juegos al cargar la página
+// Mostrar todos los juegos al cargar
 displayGames(games);
 
 // Filtrar juegos según búsqueda

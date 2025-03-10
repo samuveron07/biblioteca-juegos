@@ -1,31 +1,33 @@
+/* Reset y estilos base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background-image: url(img/audi-r8-6gsf3gm9b8zkqbzp.jpg);
     background-color: #1e1e2e;
     color: #ffffff;
     text-align: center;
-    padding: 20px;
 }
 
 /* HEADER Y NAVBAR */
 header {
-    background-color: #29293d;
+    background-color: #181825;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    padding: 15px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #ffffff;
 }
@@ -33,92 +35,102 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
+    gap: 25px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 1rem;
-    padding: 8px 12px;
+    font-size: 1.1rem;
+    padding: 10px 15px;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
     background-color: #44445a;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
+/* HERO SECTION */
+.hero {
+    background: url("img/audi-r8-6gsf3gm9b8zkqbzp.jpg") center/cover no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+}
 
-h1 {
-    font-size: 2rem;
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 #searchInput {
-    margin-top: 10px;
-    padding: 10px;
+    padding: 12px;
     width: 80%;
-    max-width: 400px;
+    max-width: 500px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1rem;
+    text-align: center;
 }
 
+/* CONTENEDOR DE JUEGOS */
 .game-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
+    padding: 40px 20px;
 }
 
 .game-card {
     background-color: #29293d;
-    padding: 15px;
-    border-radius: 10px;
-    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
 }
 
 .game-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
 }
 
 .game-card img {
-    width: 100%;        /* Todas las imágenes ocuparán el 100% del contenedor */
-    height: 280px;      /* Altura fija para mantener uniformidad */
-    object-fit: cover;  /* Recorta la imagen en lugar de deformarla */
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 .game-title {
-    font-size: 1.2rem;
-    margin: 10px 0;
+    font-size: 1.4rem;
+    margin: 15px 0;
 }
 
 .game-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #dcdcdc;
 }
 
+/* FOOTER */
 footer {
-    background-color: #29293d;
+    background-color: #181825;
     color: #ffffff;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-    position: relative;
-    bottom: 0;
+    padding: 20px;
+    margin-top: 30px;
     width: 100%;
 }
 
 footer p {
     margin: 5px 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
